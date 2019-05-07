@@ -13,6 +13,7 @@ from sklearn.preprocessing import StandardScaler
 import matplotlib.pyplot as plt 
 import seaborn as sns
 
+#dataset taken from https://www.kaggle.com/caganseval/earthquake#earthquake.csv
 my_data = pd.read_csv('earthquake.csv')
 my_data = my_data.drop(["id", "date",'time','mw','ms','mb','country','city','area','direction','dist','xm','md'], axis=1)
 
